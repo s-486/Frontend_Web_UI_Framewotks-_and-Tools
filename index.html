@@ -44,6 +44,11 @@
                 <div class="col-sm align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
+                <div class="col-sm align-self-center">
+                    <a href="#reserve" role="button" class="btn btn-block btn-warning">
+                       <b> Reserve Table </b>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -57,22 +62,26 @@
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="uthappizza">
                     <div class="media-body">
-                    <h2 class="mt-0">Uthappizza <span class="badge badge-danger"> HOT</span> <span class="badge badge-pill badge-secondary"> $4.99</span></h2>
-                    <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger"> HOT</span> <span class="badge badge-pill badge-secondary"> $4.99</span></h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
-                    
                 </div>
             </div>
         </div>
 
 
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3 order-sm-last">
+            <div class="col-12 col-sm-4 col-md-3 order-sm-first">
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <div class="media-body">
+                        <h2>Weekend Grand Buffet <span class="badge badge-danger">New</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="uthappizza">
+                </div>
             </div>
         </div>
 
@@ -90,6 +99,48 @@
                     </div>
                 </div>
                 
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-md-8 offset-md-2">
+                <div class="card" id="reserve">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-body">
+                        <dl class="row"> 
+                            <dt class="col-md-4">Number of Guests</dt>
+                            <dd class="col-md-8">
+                                <input type="radio" id="1" name="noOfGuest" value="1">
+                                <label for="1"> <b> 1 </b> </label>
+                                <input type="radio" id="2" name="noOfGuest" value="2">
+                                <label for="2"> <b> 2 </b> </label>
+                                <input type="radio" id="3" name="noOfGuest" value="3">
+                                <label for="3"> <b> 3 </b> </label>
+                                <input type="radio" id="4" name="noOfGuest" value="4">
+                                <label for="4"> <b> 4 </b> </label>
+                                <input type="radio" id="5" name="noOfGuest" value="5">
+                                <label for="5"> <b> 5 </b> </label>
+                                <input type="radio" id="6" name="noOfGuest" value="6">
+                                <label for="6"> <b> 6 </b> </label>
+                            </dd>
+                        </dl>
+                        <dl class="form-group row">
+                            <dt class="col-md-4 col-form-label">Date and Time</dt>
+                            <dd class="row">
+                                <div class="col-6">
+                                    <input type="date" placeholder="date" class="form-control">
+                                </div>
+                                <div class="col-6">
+                                    <input type="time" placeholder="date" class="form-control">
+                                </div>
+                            </dd>
+                        </dl>
+                        <div class="offset-md-4 col-md-8">
+                            <button type="submit" class="btn btn-primary text-white">
+                                Reserve
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
